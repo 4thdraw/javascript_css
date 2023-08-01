@@ -11,7 +11,11 @@
     border:1px solid #f1f1f1;
     max-width:600px;
     max-height: 600px;
+    /* width: calc(100vw - 30px); */
     display: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
 }
 /* 원래 안 보이는데 부모 클래스 .popupshow 적용되면 나타난다 */
 .popupshow #popup{
