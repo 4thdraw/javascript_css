@@ -28,3 +28,8 @@
     left:0; top:0; right:0; bottom:0;
     background-color: rgba(0,0,0,.6);
 } 
+
+/* 팝업이 노출될때에는 body 스크롤 안되게 처리 */
+.popupshow{
+    overflow-y: hidden;
+}
