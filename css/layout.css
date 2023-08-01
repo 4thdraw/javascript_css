@@ -88,10 +88,10 @@
 #faq dt:after{
     content: "▼";    
 }
-#faq dt:hover{
+#faq dt.on{
     color: red;
 }
-#faq dt:hover:after{
+#faq dt.on:after{
     content: "▲";  
 }
 #faq dd{
@@ -101,7 +101,7 @@
     box-sizing: border-box;
     transition: 0.5s;
 }
-#faq dt:hover + dd{
+#faq dt.on + dd{
     max-height: 400px;
 }
 #faq dd div{ padding: 15px; }
