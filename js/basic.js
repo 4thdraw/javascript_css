@@ -25,3 +25,7 @@ console.log(typeof  $(window).scrollTop(), $(window).scrollTop() )
 // 2. 제이쿼리 선택자 다음에는 메서드 removeClass 혹은 이벤트 click 가 온다. 
 // 3. 이벤트와 메서드의 차이는 () => { } 화살표함수 유무 
 // 이벤트 : click , scroll , swiper , hover , mouseenter, mouseleave
+
+$("#faq dt").click(function(){
+    $(this).addClass('on').siblings().removeClass('on')
+})
