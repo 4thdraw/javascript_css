@@ -5,17 +5,24 @@
     padding: 15px;
     line-height: 1.8;
     z-index: 1000000;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
     border:1px solid #f1f1f1;
-    max-width:600px;
-    max-height: 600px;
-    /* width: calc(100vw - 30px); */
     display: none;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    
+    /* 최대사이즈 */
+    max-width:600px; 
+    max-height: 600px;
+
+    /* 가변사이즈 */
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
+
+    top:0; bottom:0; left:0; right:0;
+    margin:auto;    
+   
 }
 /* 원래 안 보이는데 부모 클래스 .popupshow 적용되면 나타난다 */
 .popupshow #popup{
